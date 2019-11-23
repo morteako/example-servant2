@@ -1,19 +1,3 @@
-
--- module AppSpec where
-
--- import           Control.Exception (throwIO)
--- import           Network.HTTP.Client (Manager, newManager, defaultManagerSettings)
--- import           Network.HTTP.Types
--- import           Network.Wai (Application)
--- import           Network.Wai.Handler.Warp
--- import           Servant
--- import           Servant.API
--- import           Servant.Client
--- import           Servant.Server
--- import           Test.Hspec
--- -- import Servant.Common.Req
-
-
 module AppSpec where
 
 import           Control.Exception (throwIO)

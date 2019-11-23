@@ -1,4 +1,1 @@
-module Spec where
-
-main = do
-    print 1
+{-# OPTIONS_GHC -F -pgmF hspec-discover #-}

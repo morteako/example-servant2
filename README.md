@@ -1,3 +1,19 @@
+# GHCID
+
+
+## Run server with live reload
+ghcid exe/Main.hs -r
+
+## Run basic program with live reload
+ghcid basic/Main.hs -r
+
+## Run tests with live reload
+ghcid --command "stack ghci mini:lib  mini:test:spec" -r
+
+
+
+# Rest
+
 This is a very minimal example of a project that uses
 
 - `servant` to specify a REST API,
