@@ -1,0 +1,46 @@
+name: mini
+
+# ghc-options: -Wall
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs:
+      - test
+    dependencies:
+      - hspec
+      - mini
+      - servant-client
+      - warp >= 3.2.4
+      - http-client
+      - http-types
+      - text
+  
+library:
+  source-dirs:
+    - src
+
+executables:
+  example-servant-minimal:
+    source-dirs: exe
+    main: Main.hs
+    dependencies:
+      - mini
+
+
+  basic-test:
+    source-dirs: basic
+    main: Main.hs
+    dependencies:
+      - mini
+
+dependencies:
+  - base
+  - servant
+  - servant-server
+  - transformers
+  - aeson
+  - wai
+  - warp
+  - req >= 2.0.0
+  - text

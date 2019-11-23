@@ -1,0 +1,10 @@
+
+module Main where
+
+import           App
+
+main :: IO ()
+main = do
+    print 1
+    print 2
+    print 3
